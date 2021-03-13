@@ -19,6 +19,8 @@ public class Vehiculo implements Serializable{
     private String marca;
     private String placa;
     private String numeroChasis;
+    private boolean motorEncendido;
+    
 
     public Vehiculo(String numeroMotor, String color, String marca, String placa, String numeroChasis) {
         this.numeroMotor = numeroMotor;
@@ -77,7 +79,15 @@ public class Vehiculo implements Serializable{
         return "Vehiculo{" + "numeroMotor=" + numeroMotor + ", color=" + color + ", marca=" + marca + ", placa=" + placa + ", numeroChasis=" + numeroChasis + '}';
     }
 
-    
+    private void arrancar()
+    {
+        motorEncendido = true;
+        
+    }
+    private void apagar()
+    {
+        motorEncendido = false;
+    }
    
     
 
