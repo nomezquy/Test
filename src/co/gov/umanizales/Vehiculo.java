@@ -17,6 +17,32 @@ public class Vehiculo implements Serializable{
     private String numeroMotor;
     private String color;
     private String marca;
+    private String placa;
+    private String numeroChasis;
+
+    public Vehiculo(String numeroMotor, String color, String marca, String placa, String numeroChasis) {
+        this.numeroMotor = numeroMotor;
+        this.color = color;
+        this.marca = marca;
+        this.placa = placa;
+        this.numeroChasis = numeroChasis;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getNumeroChasis() {
+        return numeroChasis;
+    }
+
+    public void setNumeroChasis(String numeroChasis) {
+        this.numeroChasis = numeroChasis;
+    }
 
     public String getMarca() {
         return marca;
@@ -28,11 +54,6 @@ public class Vehiculo implements Serializable{
 
     public Vehiculo(String marca) {
         this.marca = marca;
-    }
-
-    public Vehiculo(String numeroMotor, String color) {
-        this.numeroMotor = numeroMotor;
-        this.color = color;
     }
 
     public String getNumeroMotor() {
@@ -53,9 +74,10 @@ public class Vehiculo implements Serializable{
 
     @Override
     public String toString() {
-        return "Vehiculo{" + "numeroMotor=" + numeroMotor + ", color=" + color + ", marca=" + marca + '}';
+        return "Vehiculo{" + "numeroMotor=" + numeroMotor + ", color=" + color + ", marca=" + marca + ", placa=" + placa + ", numeroChasis=" + numeroChasis + '}';
     }
 
+    
    
     
 
