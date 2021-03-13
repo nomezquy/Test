@@ -20,6 +20,7 @@ public class Vehiculo implements Serializable{
     private String placa;
     private String numeroChasis;
     private boolean motorEncendido;
+    private int cilindraje;
     
 
     public Vehiculo(String numeroMotor, String color, String marca, String placa, String numeroChasis) {
@@ -88,6 +89,8 @@ public class Vehiculo implements Serializable{
     {
         motorEncendido = false;
     }
+   
+    
    
     
 
