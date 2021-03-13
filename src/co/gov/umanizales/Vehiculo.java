@@ -16,6 +16,19 @@ public class Vehiculo implements Serializable{
     
     private String numeroMotor;
     private String color;
+    private String marca;
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public Vehiculo(String marca) {
+        this.marca = marca;
+    }
 
     public Vehiculo(String numeroMotor, String color) {
         this.numeroMotor = numeroMotor;
@@ -40,8 +53,10 @@ public class Vehiculo implements Serializable{
 
     @Override
     public String toString() {
-        return "Vehiculo{" + "numeroMotor=" + numeroMotor + ", color=" + color + '}';
+        return "Vehiculo{" + "numeroMotor=" + numeroMotor + ", color=" + color + ", marca=" + marca + '}';
     }
+
+   
     
 
 }
